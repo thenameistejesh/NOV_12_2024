@@ -1,0 +1,56 @@
+'''#write a python program to perform arithmetic expression evaluation
+#uisng lambda functions
+result=lambda a,b:a+b
+print(result(30,20))
+
+
+#ex2: write a python program to change lower case string to upper case string
+str1="alLADI clOUd trAiNing"
+target_string=lambda str1: str1.upper()
+print(target_string(str1))
+
+
+str1="alLADI clOUd trAiNing"
+target_string=lambda str1: str1.swapcase()
+print(target_string(str1))
+
+str1="alLADI clOUd trAiNing"
+target_string=lambda str1: str1.lower()
+print(target_string(str1))
+
+str1="alLADI clOUd trAiNing"
+target_string=lambda str1: str1.title()
+print(target_string(str1))
+
+str1="alLADI clOUd trAiNing"
+target_string=lambda str1: str1.capitalize()
+print(target_string(str1))
+
+#wpp to find cube using def keyword and lambda
+def cube(x):
+    return x*x*x
+res=cube(5)
+print("cube res: using def:",res)
+#using lambda
+print("\nuisng lambda:")
+lambda_cube=lambda x:x*x*x
+print(lambda_cube(5))
+#wpp to find odd numbers from the list using def and lambda functions
+numbers_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+def find_numbers(numbers):
+    odd_numbers = [num for num in numbers if num % 2 != 0]
+    even_numbers = [num for num in numbers if num % 2 == 0]
+    return odd_numbers,even_numbers
+numbers_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+odd_numbers,even_numbers=find_numbers(numbers_list)
+print("Odd numbers in the list are:",odd_numbers)
+print("Even numbers in the list are:",even_numbers)
+'''
+
+#using lambda functions to filter odd and even numbers
+numbers_list = [1, 2, 3, 4, 5, 6, 7, 8, 9,13,17,19]
+target_odd_list=list(filter(lambda  x:(x%2!=0),numbers_list))
+target_even_list=list(filter(lambda  x:(x%2==0),numbers_list))
+
+print(target_odd_list)
+print(target_even_list)
