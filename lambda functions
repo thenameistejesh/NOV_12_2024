@@ -1,0 +1,42 @@
+
+#Assignment1
+
+sum_of_two=lambda x,y:x+y
+result=sum_of_two(20,30)
+print(result)
+
+#A2
+num=[21,32,43,54,65,76,87,98,9]
+target_odd_num=list(filter(lambda x:(x%2 != 0),num))
+target_even_num=list(filter(lambda x:(x%2==0),num))
+
+print(target_odd_num)
+print(target_even_num)
+
+#A3
+num=[21,32,43,54,65,76,87,98,9]
+target_odd_num=list(map(lambda x:(x%2 != 0),num))
+target_even_num=list(map(lambda x:(x%2==0),num))
+
+print(target_odd_num)
+print(target_even_num)
+
+#A4
+from functools import reduce
+
+num=[1,2,3]
+
+produce=reduce(lambda x,y:x*y,num)
+print(produce)
+
+#A5
+points=[(1,2),(3,1),(5,6)]
+sorted_points = sorted(points, key=lambda x:x[1])
+print(sorted_points)
+
+#A6
+even_odd=lambda x: 'Even' if x%2==0 else 'odd'
+result=even_odd(5)
+print(result)
+result1=even_odd(2)
+print(result1)
